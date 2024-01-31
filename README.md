@@ -2,13 +2,10 @@
 This tool is designed to perform advanced cleanup tasks in Termux, including clearing cached packages, removing temporary files, and deleting unnecessary logs. It does not remove your installed packages or important data.
 
 # installation
+1. `apt install git`
+2. `git clone https://github.com/RedQueen979/AVcleaner && cd AVcleaner && chmod +x AVcleaner.sh && ln -s ~/AVcleaner/AVcleaner.sh /data/data/com.termux/files/usr/bin/clean`
 
-1. git clone https://github.com/RedQueen979/AVcleaner
-2. cd AVcleaner
-3. chmod +x AVcleaner.sh
-4. ln -s ~/AVcleaner/AVcleaner.sh /data/data/com.termux/files/usr/bin/clean
-
-5. All done now type 'clean' to run the tool. 
+3. All done now type 'clean' to run the tool. 
 
 The script will prompt you for selective cleanup.
 
