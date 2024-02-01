@@ -33,7 +33,7 @@ cleanup() {
     # Check if temporary files cleanup is selected
     if [ "$clean_temp" == "y" ]; then
         echo -e "\e[1;32mCleaning temporary files...\e[0m"  
-        deleted_temp=$(find /data/data/com.termux/files/home/tmp/ -type f -delete -print)
+        deleted_temp=$(find /data/data/com.termux/files/home/tmp/ -type f -delete -print 2>/dev/null)
         echo -e "\e[1;32m$deleted_temp\e[0m" >> "$LOG_FILE"
     else
         echo -e "\e[1;33mSkipped cleaning temporary files.\e[0m"  
@@ -42,7 +42,7 @@ cleanup() {
     # Check if logs cleanup is selected
     if [ "$clean_logs" == "y" ]; then
         echo -e "\e[1;32mCleaning unnecessary logs...\e[0m"  
-        deleted_logs=$(find /data/data/com.termux/files/home -type f -name "*.log" -delete -print)
+        deleted_logs=$(find /data/data/com.termux/files/home -type f -name "*.log" -delete -print 2>/dev/null)
         echo -e "\e[1;32m$deleted_logs\e[0m" >> "$LOG_FILE"
     else
         echo -e "\e[1;33mSkipped cleaning unnecessary logs.\e[0m"  
