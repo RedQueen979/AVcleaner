@@ -24,8 +24,8 @@ cleanup() {
     # Check if cached packages cleanup is selected
     if [ "$clean_packages" == "y" ]; then
         echo -e "\e[1;32mCleaning cached packages...\e[0m"  
-        apt-get clean
-        echo -e "\e[1;32mCleaned cached packages.\e[0m" >> "$LOG_FILE"
+        deleted_packages=$(apt-get clean | grep "cleaned")
+        echo -e "\e[1;32m$deleted_packages\e[0m" >> "$LOG_FILE"
     else
         echo -e "\e[1;33mSkipped cleaning cached packages.\e[0m"  
     fi
@@ -33,8 +33,8 @@ cleanup() {
     # Check if temporary files cleanup is selected
     if [ "$clean_temp" == "y" ]; then
         echo -e "\e[1;32mCleaning temporary files...\e[0m"  
-        rm -rf /data/data/com.termux/files/home/tmp/*
-        echo -e "\e[1;32mCleaned temporary files.\e[0m" >> "$LOG_FILE"
+        deleted_temp=$(find /data/data/com.termux/files/home/tmp/ -type f -delete -print)
+        echo -e "\e[1;32m$deleted_temp\e[0m" >> "$LOG_FILE"
     else
         echo -e "\e[1;33mSkipped cleaning temporary files.\e[0m"  
     fi
@@ -42,8 +42,8 @@ cleanup() {
     # Check if logs cleanup is selected
     if [ "$clean_logs" == "y" ]; then
         echo -e "\e[1;32mCleaning unnecessary logs...\e[0m"  
-        find /data/data/com.termux/files/home -type f -name "*.log" -delete
-        echo -e "\e[1;32mCleaned unnecessary logs.\e[0m" >> "$LOG_FILE"
+        deleted_logs=$(find /data/data/com.termux/files/home -type f -name "*.log" -delete -print)
+        echo -e "\e[1;32m$deleted_logs\e[0m" >> "$LOG_FILE"
     else
         echo -e "\e[1;33mSkipped cleaning unnecessary logs.\e[0m"  
     fi
