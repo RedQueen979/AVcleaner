@@ -1,14 +1,12 @@
 <p align="center">
 <a href="https://github.com/RedQueen979"><img title="AVcleaner" src="avcleanerlogo.png"></a>
 </p>
-
 <p align="center">
 <a href="https://github.com/RedQueen979"><img title="Github" src="https://img.shields.io/badge/Github-RedQueen979-brightgreen?style=for-the-badge&logo=github"></a>
-</p>
-
+</a>
 <p align="center">
 <a href="https://github.com/RedQueen979"><img title="Tool" src="https://img.shields.io/badge/Tool-AVcleaner-red.svg"></a>
-<a href="https://github.com/RedQueen979"><img title="Version" src="https://img.shields.io/badge/Version-1.0-yellow.svg?style=flat-square"></a>
+<a href="https://github.com/RedQueen979"><img title="Version" src="https://img.shields.io/badge/Version-1.0-yellow.svg"></a>
 <a href="https://github.com/RedQueen979"><img title="Maintainence" src="https://img.shields.io/badge/Maintained%3F-yes-blue.svg"></a>
 </p>
 
@@ -46,7 +44,7 @@ This tool caters to advanced users who seek a customizable cleanup process.
 
 ## Screenshots
 
-![App Screenshot](avcleanershot2.png/468x300?text=App+Screenshot+Here)
+![App Screenshot](avcleanershot2.png)
 
 
 ## License
