@@ -6,7 +6,7 @@
 </a>
 <p align="center">
 <a href="https://github.com/RedQueen979"><img title="Tool" src="https://img.shields.io/badge/Tool-AVcleaner-red.svg"></a>
-<a href="https://github.com/RedQueen979"><img title="Version" src="https://img.shields.io/badge/Version-0.1.0-yellow.svg"></a>
+<a href="https://github.com/RedQueen979"><img title="Version" src="https://img.shields.io/badge/Version-0.2.0-yellow.svg"></a>
 <a href="https://github.com/RedQueen979"><img title="Maintainence" src="https://img.shields.io/badge/Maintained%3F-yes-blue.svg"></a>
 </p>
 
